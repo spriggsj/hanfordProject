@@ -529,9 +529,18 @@ The following area some sample event calendar views. You can apply or mix config
 = 1.2.76 =
 * Changed the code to configure the hours width in the day and week view
 
+= 1.2.77 =
+* Fixed links
+
+= 1.2.78 =
+* Added CSS class to time in the month view
+
+= 1.2.79 =
+* Admin intf updates
+
 == Upgrade Notice ==
 
-= 1.2.76 =
-* Changed the code to configure the hours width in the day and week view
+= 1.2.79 =
+* Admin intf updates
 
 Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support

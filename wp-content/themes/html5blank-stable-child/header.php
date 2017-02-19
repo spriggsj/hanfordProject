@@ -39,21 +39,17 @@
 
           <!-- header -->
           <!--<header class="header clear" role="banner">-->
-                <nav class="navbar navbar-default navbar-fixed-top trans">
+                <nav class="navbar navbar-default  trans" ">
                 <div class="navbar  navbar-custom" style="border-radius:0px;"> 
                     <!-- Brand and toggle get grouped for better mobile display --> 
                         <div class="container"> 
                             <div class="row">
-                                <div class="col-xs-12 col-md-4 main-img">
-                                    
-
-                                </div>
-                                <div class="col-xs-12 col-md-2 main-img">
-                                    <a href="<?php bloginfo('url');?>" class="navbar-brand">Heart Of Hanford<?php include 'logo.php'?></a>
+                                <div class="col-xs-12 col-md-6 main-img">
+                                    <a href="<?php bloginfo('url');?>" class="navbar-brand">Heart Of Hanford</a>
 
                                 </div>
                                 
-                                <div class="col-xs-12 col-md-6">
+                                <div class="col-xs-12 col-md-6 hamburger">
                                     <div class="row">
                                         
                                              <div class="col-xs-9 col-md-12">

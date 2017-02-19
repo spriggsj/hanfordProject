@@ -1,0 +1,59 @@
+<div class="col-sm-12 col-md-12 col-lg-6 info">
+					<h3 class=indentThree>Our Roots</h3>
+					<p class="pSpace">The Hanford area was inhabited by the Tachi Yokut Indians for several thousand years prior to Euro-American contact. They occupied areas along watercourses such as creeks, springs and seep areas (such as sloughs), along perennial and seasonal drainages, as well as flat ridges and terraces.[9] Therefore, the areas along streams are considered likely locations for prehistoric cultural resources. Permanent villages were usually placed on an elevation above the seasonal flood levels. Surrounding areas were used for hunting and seed, acorn, and grass gathering. Hanford is named for James Madison Hanford, a railroad executive, after the Southern Pacific Railroad tracks were laid through a <a href="/">	Read More</a>.</p>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-6 info">
+					<h3 class=indentThree>Our Purpose</h3>
+					<p class="pSpace">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
+				</div>
+				<div class="col-xs-12  col-md-4 newHanford ">
+					<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/img/oldHanford.jpg">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+ <section id="fourCol">
+		<div class="container-fluid">
+  			<div class="row">
+    			<div id="learn" class="col-xs-12">
+    				<!-- <a href="#"> -->
+    					
+    					<ul>
+
+					    
+					  		<?php $the_query = new WP_Query( 'posts_per_page=1' ); ?>
+
+
+					  		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+
+							<div class="col-sm-4 newest-recent-post">
+								<div class="row newest-post-container">
+									<h2 class="latestPostsTitle">Latest News</h2>
+									<?php the_post_thumbnail('medium'); ?>
+									
+								</div>
+							</div>
+							<div class="col-sm-7 ">
+								<aside>
+										<h2 class="postTitle"><?php the_title(); ?></h2>
+										<span class="date"><?php the_time("F j, Y"); ?></span>
+										<p class="fPageExcerpt"><?php the_excerpt(); ?></p>
+									</aside>
+							</div>
+					  		<!-- <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li> -->
+							<?php
+					  			endwhile;
+					 			 wp_reset_postdata();
+					  			?>
+				  		</ul>
+    				<!-- </a> -->
+    			</div>

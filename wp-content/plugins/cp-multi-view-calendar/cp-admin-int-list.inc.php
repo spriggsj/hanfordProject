@@ -179,7 +179,7 @@ if ($message) echo "<div id='setting-error-settings_updated' class='updated sett
 </div> 
 
 
-[<a href="http://wordpress.dwbooster.com/support?ref=dashboard" target="_blank">Request Custom Modifications</a>] | [<a href="http://wordpress.dwbooster.com/calendars/cp-appointment-calendar" target="_blank">Help</a>]
+[<a href="http://wordpress.dwbooster.com/support?ref=dashboard" target="_blank">Request Custom Modifications</a>] | [<a href="<?php echo $this->plugin_URL; ?>" target="_blank">Help</a>]
 </form>
 </div>
 

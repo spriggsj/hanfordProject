@@ -1,0 +1,96 @@
+<section class="">
+  <div class="container">
+    <div class="row main-content">
+      <!-- CONTENT -->
+      <div class="col-md-12 members">
+  <?php
+    $args = [
+      'post_type' => 'custom_post',
+      'posts_per_page' => 100,
+      'post_status' => 'publish',
+      'order' => 'ASC',
+      'orderby' => 'title',
+      'category_name' => 'beauty'
+
+
+    ];
+    ?>
+    <div class="categoryName">
+      <h2>Beauty</h2>
+    </div>
+    <?php
+    $beauty_query = new WP_Query($args);
+    if($beauty_query->have_posts()) : while($beauty_query->have_posts()) : $beauty_query->the_post();
+      $member = esc_html(get_post_meta(get_the_ID(), 'member_business', true));
+      $contact = esc_html(get_post_meta(get_the_ID(), 'member_contact', true));
+      $street = esc_html(get_post_meta(get_the_ID(), 'street_address', true));
+      $city = esc_html(get_post_meta(get_the_ID(), 'city_address', true));
+      $phone = esc_html(get_post_meta(get_the_ID(), 'member_phone', true));
+      $url = esc_html(get_post_meta(get_the_ID(), 'member_url',true));
+    ?>
+    <?php  echo "<div class='col-xs-12 col-sm-6 col-md-3 padBusDiv '><p class='dir_Bus_Name'><strong>" . $member . "</strong></p>"; ?>
+
+    <?php echo "<p>" .$member. "</p>";
+          echo "<p> Contact: " . $contact . "</p>";
+          echo "<p>" . $street . "</p>";
+          echo "<p>" . $city . "</p>";
+          echo "<p>" . $phone . "</p>";
+          echo "<p><a href='" . $url . "'>" . $url . "</a></p></div>";
+    ?>
+
+  <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
+  <?php endif; ?>
+      </div>
+  </div>
+</section>
+
+<section class="">
+  <div class="container">
+    <div class="row main-content">
+      <!-- CONTENT -->
+      <div class="col-md-12 members">
+      <?php
+        $args = [
+          'post_type' => 'custom_post',
+          'posts_per_page' => 100,
+          'post_status' => 'publish',
+          'order' => 'ASC',
+          'orderby' => 'title',
+          'category_name' => 'business'
+
+
+        ];
+        ?>
+    <div class="categoryName">
+      <h2>Business</h2>
+    </div>
+    <?php
+    $business_query = new WP_Query($args);
+    if($business_query->have_posts()) : while($business_query->have_posts()) : $business_query->the_post();
+      $member = esc_html(get_post_meta(get_the_ID(), 'member_business', true));
+      $contact = esc_html(get_post_meta(get_the_ID(), 'member_contact', true));
+      $street = esc_html(get_post_meta(get_the_ID(), 'street_address', true));
+      $city = esc_html(get_post_meta(get_the_ID(), 'city_address', true));
+      $phone = esc_html(get_post_meta(get_the_ID(), 'member_phone', true));
+      $url = esc_html(get_post_meta(get_the_ID(), 'member_url',true));
+    ?>
+    <?php  echo "<div class='col-xs-12 col-sm-6 col-md-3 padBusDiv '><p class='dir_Bus_Name'><strong>" . $member . "</strong></p>"; ?>
+
+    <?php echo "<p>" .$member. "</p>";
+          echo "<p> Contact: " . $contact . "</p>";
+          echo "<p>" . $street . "</p>";
+          echo "<p>" . $city . "</p>";
+          echo "<p>" . $phone . "</p>";
+          echo "<p><a href='" . $url . "'>" . $url . "</a></p></div>";
+    ?>
+
+  <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
+  <?php endif; ?>
+      </div>
+  </div>
+</section>
+
+
+<?php $myquery = new WP_Query( array( 'tag' => 'business' ) ); ?> <!-- trying to query tags ? -->
