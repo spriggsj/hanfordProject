@@ -12,20 +12,33 @@
 	License URI: http://opensource.org/licenses/mit-license.php
 */
 @import url('https://fonts.googleapis.com/css?family=Lato|Oswald|PT+Serif|Playfair+Display+SC');
-
-/*  
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+/*
 font-family: 'Playfair Display SC', serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'PT Serif', serif;
+font-family: 'Sacramento', cursive;
 */
 
 /* Navigation Styles */
+nav.navbar.navbar-default.trans {
+    color: #303a39;
+    background-color: #70c1bd;
+    font-family: 'Playfair Display SC', serif;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: #528f6d;
+}
+ul#menu-primary li:active{
+    background-color: #70c1bd;
 
-nav.navbar.navbar-default.navbar-fixed-top.trans {
+}
+/*nav.navbar.navbar-default.trans {
     background-color: rgba(160, 205, 210, 0.3);
     border-color: transparent;
-}	
+}	*/
 
 nav.navbar-default .navbar-brand {
     color: #303a39;
@@ -38,51 +51,116 @@ nav.navbar-default .navbar-nav>li>a {
 }
 nav.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: #303a39;
-    background-color: rgba(160, 205, 210, 0.3);
+    /*background-color: rgba(160, 205, 210, 0.3);*/
+    background-color: #70c1bd;
 }
 ul.dropdown-menu {
-    background-color: rgba(160, 205, 210, 0.3);
+    /*background-color: rgba(160, 205, 210, 0.3);*/
 }
 nav.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #333e3d;
-    background-color: rgba(160, 205, 210, 0.3);
+    /*background-color: rgba(160, 205, 210, 0.3);*/
+    background-color: #70c1bd;
 }
 
 
 nav.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
      color: #333e3d;
-    background-color: rgba(160, 205, 210, 0.3);
+    /*background-color: rgba(160, 205, 210, 0.3);*/
+    background-color: #70c1bd;
 }
-
+nav.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:active{
+    background-color: #70c1bd!important;
+}
 /* End Navigation Styles */
 
 /* Header Styles */
-	
-	header.hero-banner{
+
+	/*header.hero-banner{
 		    background-image: url(img/heartOfHanford.jpg);
     		height: 700px;
     		background-repeat: no-repeat;
     		background-position: 29% 7%;
     		margin-top: -169px;
+}*/
+
+/*header.hero-banner{
+            background-image: url(img/testmap.jpg);
+
+}*/
+.heroImage{
+    width:100%;
 }
 
-	div.intro h1 {
+	/*.intro h1 {
     text-align: center;
     padding-top: 400px;
     font-size: 70px;
     color: #fff;
-        text-shadow: 2px 2px #2d4151;
+    text-shadow: 2px 2px #2d4151;
+    font-family: 'Playfair Display SC', serif;
+}*/
+.intro h1 {
+    text-align: center;
+
+    font-size: 70px;
+    color: #010101;
+    text-shadow: 2px 2px #2d4151;
     font-family: 'Playfair Display SC', serif;
 }
-
 div.intro h3 {
     text-align: center;
-    
+
     font-size: 40px;
     color: #fff;
     font-family: 'Playfair Display SC', serif;
 }
 /* End Header Styles */
+/* archive Header Styles */
+header.hero-banner-archive{
+    background-image: url(img/Fox.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: 34% 17%;
+    margin-top: -169px;
+}
+div.archive-intro h1 {
+    text-align: center;
+    padding-top: 345px;
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 2px 2px #2d4151;
+    font-family: 'Playfair Display SC', serif;
+}
+
+div.archive-intro h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Playfair Display SC', serif;
+}
+div.archive-excerpt{
+    min-height:290px;
+}
+div.col-xs-3.archive-excerpt img{
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+.col-xs-8.archive-excerpt {
+    padding-bottom: 10px;
+}
+div.archive-section-title{
+    text-align: center;
+}
+div.archive-section-title h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* End archive Header Styles */
+
+
 
 /* Front Page Styles */
 
@@ -102,38 +180,34 @@ h3.indentThree {
 div.olHanford{
 	height:410px;
 	width: 550px;
-	background-image: url(img/oldHanford.jpg);
-	background-repeat:no-repeat;
-    background-size:cover;
+	/*background-image: url(img/oldHanford.jpg);*/
+
 }
 div.newHanford{
 	height:410px;
 	width: 550px;
-	background-image: url(img/civic.jpg);
-	background-repeat:no-repeat;
-    background-size:cover;
+	/*background-image: url(img/civic.jpg);*/
+
     border:3px solid white;
-    
+
 }
 
-div.newHanford:after {
-  content: '';
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  right: -15px;
-  bottom: -15px;
-  background: black;
-  z-index: -1;
-}
 
-p.pSpace {
+h3.pSpace {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    font-family: 'PT Serif', serif;
-    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    line-height: 1.7;
 }
+
+h3.pSpace span{
+    font-size: 60px;
+    font-family: cursive;
+    color:#1a1984;
+}
+
 div.info {
 	min-height: 470px;
 }
@@ -153,16 +227,255 @@ p.articlepSpace {
     font-family: 'PT Serif', serif;
     font-size: 18px;
 }
-/* Front Page Styles */
+
+h2.latestPostsTitle{
+
+    font-family: 'Playfair Display SC', serif;
+
+}
+h2.postTitle{
+    font-family: 'Playfair Display SC', serif;
+    padding-top: 40px;
+}
+.row.newest-post-container {
+    padding-bottom: 40px;
+}
+.row.newest-post-container {
+    text-align: center;
+}
+
+div.Hanimg img.img-responsive {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.textPad{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div.imgPad{
+    padding-top: 60px;
+}
+
+h2#quote {
+    font-family: Sacramento;
+    font-size: 3.7em;
+    color: #1a1984;
+}
+/* End Front Page Styles */
+
+
+/* Single Page Styles */
+textarea#comment {
+    width: 100%;
+}
+
+
+
+/*End Single Page Styles */
+
+/* footer styles  */
 footer {
-    background-color:  #e3f0f2;
+    background-color:  #70c1bd;
     padding:20px;
 }
 div.socialmedia__icons{
 	text-align: center;
+    font-size: 24px;
+
 }
-/* Footer Styles */
+span.date{
+    font-size: 18px;
+}
+p.fPageExcerpt{
+    font-size: 18px;
+    font-family: 'PT Serif', serif;
+}
+
+div.ourstory ul{
+        list-style: none;
+        font-size: 18px;
+        padding-left: 20px;
+        line-height: 2;
+
+}
+.col-sm-4.ourstory {
+    padding-left: 70px;
+    font-weight: 600;
+    font-family: 'PT Serif', serif;
+}
+.col-sm-4.rsFeed {
+    padding-left: 70px;
+    font-weight: 600;
+    font-family: 'PT Serif', serif;
+
+}
+.col-sm-4.mahout__footer__logo {
+    padding-left: 70px;
+    font-family: 'PT Serif', serif;
+}
+.col-sm-4.rsFeed p{
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 2;
+}
+input.search-input {
+    width: 100%;
+    height: 18px;
+}
+button.search-submit {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #19a0c1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    float: right;
+}
+input.search-input {
+    width: 100%;
+    height: 20px;
+}
+
+img.img-responsive.mahout-logo {
+    height: 40px;
+    background-color: #19a0c1;
+}
+h3.companyName {
+    font-size: 12px;
+    color: #444;
+    float: right;
+    width: 40px;
+    font-family: 'PT Serif', serif;
+}
 
 
 
-/* End Footer Styles */
+
+.col-xs-12.poweredLogo {
+    bottom: -20px;
+}
+/* End footer styles  */
+/* temp styles */
+
+iframe {
+    margin-top: 50px;
+    /* font-size: 30px; */
+}
+div.msg {
+
+    font-size: 20px;
+
+}
+
+
+
+/* End temp styles */
+/* Business catagory list styles */
+
+h2.catTitle{
+  /*font-family: 'Playfair Display SC', serif;*/
+  /*font-family: 'Oswald', sans-serif;*/
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: 'PT Serif', serif;
+  /*font-family: 'Sacramento', cursive;*/
+}
+
+/* End Business catagory list styles */
+/* Calendar Styles */
+
+
+/* End Calendar Styles */
+
+
+
+@media only screen and (max-width: 500px) {
+    div.olHanford {
+        height: 216px;
+        width: 288px;
+    }
+    div.newHanford{
+        height: 225px;
+        width: 271px;
+    }
+    div.intro h1{
+        font-size: 49px;
+    }
+    div.socialmedia__icons {
+        text-align: left;
+        font-size: 20px;
+        line-height: 2.1;
+    }
+    .col-sm-4.ourstory {
+        padding-left: 0px;
+    }
+    .col-sm-4.mahout__footer__logo {
+        padding-left: 0px;
+    }
+    .col-sm-4.rsFeed {
+        padding-left: 0px;
+
+    }
+    h3.companyName{
+        float: none;
+
+    }
+
+}
+
+@media (max-width:330px){
+    div.intro h1{
+        font-size: 57px;
+    }
+    div.textPad h3{
+        font-size: 18px
+    }
+    div.textPad1 h3{
+        font-size: 18px
+    }
+
+}
+@media (max-width:430px){
+    div.col-xs-12.col-md-6.hamburger {
+    margin-left: -130px;
+    }
+    .navbar-default .navbar-toggle {
+    background-color: #19a0c1;
+    }
+    .navbar-default .navbar-toggle:hover{
+    background-color: #19a0c1!important;
+    }
+
+}
+/* Business Directory Archive Styles */
+p.dir_Bus_Name strong{
+    font-size: 18px;
+}
+.col-xs-12.col-md-3.padBusDiv {
+    padding-top: 40px;
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    min-height: 280px;
+}
+
+/* End Business Directory Archive Styles */
+
+/* Side Bar Styles  */
+div.advertise{
+    background-color: #70c1bd;
+    /*color:#1a1984;*/
+    font-family: 'Playfair Display SC', serif;
+    color:#333e3d;
+    border: 1px solid #e7e7e7;
+}
+h3.center{
+    text-align: center;
+}
+h3.center span{
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    color:#333e3d;
+}
+
+/* Side Bar Styles  */

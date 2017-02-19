@@ -2160,7 +2160,7 @@
             }
             var cen;
             if (!e.allday && !sf) {
-                cen = fomartTimeAMPM(e.st.hour,e.st.minute,__MilitaryTime) + " " + e.event[1];
+                cen = "<span class=\"t-time\">" + fomartTimeAMPM(e.st.hour,e.st.minute,__MilitaryTime) + "</span> " + e.event[1];
             }
             else {
                 cen = e.event[1];
