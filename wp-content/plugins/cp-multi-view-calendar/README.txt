@@ -538,9 +538,12 @@ The following area some sample event calendar views. You can apply or mix config
 = 1.2.79 =
 * Admin intf updates
 
+= 1.2.80 =
+* Changed the portuguese language file
+
 == Upgrade Notice ==
 
-= 1.2.79 =
-* Admin intf updates
+= 1.2.80 =
+* Changed the portuguese language file
 
 Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support

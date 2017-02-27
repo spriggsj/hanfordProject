@@ -21,7 +21,7 @@
       <div class="col-xs-6 col-sm-3">
         <h1 class="catLink"><a href="/beauty">Beauty</a></h1>
       </div>
-      
+
       <div class="col-xs-6 col-sm-3">
         <h1 class="catLink"><a href="/communications">Communications</a></h1>
       </div>

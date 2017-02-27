@@ -33,15 +33,15 @@ function my_method() {
 	 wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/min/custom-min.js', true );
 	 wp_enqueue_script('custom-scripts'); //enqueue it
 
-	
+
 
 	wp_register_script('bootstrap-js', get_stylesheet_directory_uri() . '/scripts/bootstrap.min.js', array(), '3.3.6', 'all');
 	// fires it
-	wp_enqueue_script('bootstrap-js'); //enqueue it	
+	wp_enqueue_script('bootstrap-js'); //enqueue it
 
 	wp_register_script('jQuery', get_stylesheet_directory_uri() . '/scripts/jquery-1.11.2.min.js', array(), '1.11.2', 'all');
 	// fires it
-	wp_enqueue_script('jQuery'); //enqueue it	
+	wp_enqueue_script('jQuery'); //enqueue it
 
 
 }
@@ -49,4 +49,14 @@ function my_method() {
 // Register Custom Navigation Walker
  require_once('wp_bootstrap_navwalker.php');
 
+ // testing cmb2 under this comment
 
+ // form validation
+
+ // custom jquery
+//wp_register_script( 'my_custom_js', get_template_directory_uri() . '/js/jquery.custom.js', array( 'jquery' ), true );
+//wp_enqueue_script( 'my_custom_js' );
+
+// validation
+//wp_register_script( 'validation', 'http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js', array( 'jquery' ) );
+//wp_enqueue_script( 'validation' );

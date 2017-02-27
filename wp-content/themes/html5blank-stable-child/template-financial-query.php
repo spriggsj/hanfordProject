@@ -32,7 +32,7 @@
 
 		?>
 		<div class="categoryName">
-			<h2 class="catTitle">Business Financial Services</h2>
+			<h2 class="catTitle">Business Financial and Legal Services</h2>
 		</div>
 		<?php
 		$apparel_query = new WP_Query($args);
@@ -47,11 +47,11 @@
 		?>
 		<?php  echo "<div class='col-xs-12 col-sm-6 col-md-3 padBusDiv '><p class='dir_Bus_Name'><strong>" . $member . "</strong></p>"; ?>
 
-		<?php echo "<p>" .$member. "</p>";
+		<?php
 					echo "<p> Contact: " . $contact . "</p>";
 					echo "<p>" . $street . "</p>";
 					echo "<p>" . $city . "</p>";
-					echo "<p>" . $phone . "</p>";
+					echo "<p><a href='tel:". $phone . "'>" . $phone . "</a></p>";
 					echo "<p><a href='" . $url . "'>" . $url . "</a></p></div>";
 
 		?>
