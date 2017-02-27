@@ -182,9 +182,9 @@ var i18n = jQuery.extend({}, i18n || {}, {
         "years":"anos",
         "once":"Uma vez",
         "times":"vezes",
-        "readmore":"read more",
+        "readmore":"ler mais",
         "readmore_less":"less",
-        "readmore":"read more",
+        "readmore":"ler mais",
         "readmore_less":"less",
         "until":"até"
     }

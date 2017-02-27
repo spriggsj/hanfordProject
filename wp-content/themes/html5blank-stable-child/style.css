@@ -456,7 +456,7 @@ p.dir_Bus_Name strong{
     padding-top: 40px;
     font-size: 16px;
     font-family: 'PT Serif', serif;
-    min-height: 280px;
+    min-height: 300px;
 }
 
 /* End Business Directory Archive Styles */
@@ -478,4 +478,10 @@ h3.center span{
     color:#333e3d;
 }
 
-/* Side Bar Styles  */
+/* end Side Bar Styles  */
+
+/* Business entry form */
+  fieldset input{
+    width:100%
+  }
+/* End Business entry form */

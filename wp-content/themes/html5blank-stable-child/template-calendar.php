@@ -36,12 +36,20 @@
 			<!-- /article -->
 
 		<?php endif; ?>
-			
+
 		</div>
 		</section>
 		<!-- /section -->
+		<div class="container">
+			<div class="row">
+				<div class = "col-xs-12">
+
+
 		<h2>Don't see your Downtown Event listed here. Please submit your event.</h2>
-		<?php echo do_shortcode( '[contact-form-7 id="111" title="Additional Events"]' ); ?>
+		<?php echo do_shortcode( '[contact-form-7 id="84" title="Additional events"]' ); ?>
+		</div>
+	</div>	
+</div>
 	</main>
 
 
